@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@nx-boundaries/boundary-a/lib-a": ["libs/boundary-a/lib-a/src/index.ts"],
+      "@nx-boundaries/boundary-b/lib-b": ["libs/boundary-b/lib-b/src/index.ts"],
+      "@nx-boundaries/shared/util": ["libs/shared/util/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

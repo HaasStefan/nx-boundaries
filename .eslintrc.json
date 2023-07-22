@@ -13,8 +13,16 @@
             "allow": [],
             "depConstraints": [
               {
-                "sourceTag": "*",
-                "onlyDependOnLibsWithTags": ["*"]
+                "sourceTag": "scope:boundary-a",
+                "onlyDependOnLibsWithTags": ["scope:boundary-a", "scope:shared"]
+              },
+              {
+                "sourceTag": "scope:boundary-b",
+                "onlyDependOnLibsWithTags": ["scope:boundary-b", "scope:shared"]
+              },
+              {
+                "sourceTag": "scope:shared",
+                "onlyDependOnLibsWithTags": ["scope:shared"]
               }
             ]
           }
